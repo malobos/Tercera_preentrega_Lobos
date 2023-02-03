@@ -14,6 +14,14 @@ Así mismo, en el módulo "\Tercera_preentrega_Lobos\proyecto_uno\App1\views.py"
 
 En el módulo "Tercera_preentrega_Lobos\proyecto_uno\App1\urls.py" se encuentran las urls de cada vista, asi como de los formularios de búsqueda y de resultados de las búsquedas.
 
-Para correr la página es necesario ejecutar en la consola: 1- pyhton manage.py makemigrations 2- python manage.py migrate 3- python manage.py runserver Luego,desde un explorador de internet, debes ingresar a la siguente dirección: http://127.0.0.1:8000/App1/
+Para correr la página es necesario ejecutar en la consola: 
 
-Cualquier duda oconsulta, escribime al siguiente correo: mariana.lobos88@gmail.com
+1- pyhton manage.py makemigrations 
+
+2- python manage.py migrate 
+
+3- python manage.py runserver 
+
+Luego,desde un explorador de internet, debes ingresar a la siguente dirección: http://127.0.0.1:8000/App1/
+
+Cualquier duda o consulta, escribime al siguiente correo: mariana.lobos88@gmail.com
