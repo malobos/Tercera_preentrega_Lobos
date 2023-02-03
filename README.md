@@ -10,7 +10,7 @@ He creado cuatro modelos que encontrarás en "\Tercera_preentrega_Lobos\proyecto
 
 Cada modelo tiene asociado un formulario, que se encuentra en "\Tercera_preentrega_Lobos\proyecto_uno\App1\forms.py", a partir de los cuales se realiza la carga de datos a cada base de datos.
 
-Así mismo, en el módulo "\Tercera_preentrega_Lobos\proyecto_uno\App1\views.py" se encuentran las vistas tanto de los modelos, como de los formularios tanto de carga de datos como de búsqueda de datos en las bases de datos.
+Así mismo, en el módulo "\Tercera_preentrega_Lobos\proyecto_uno\App1\views.py" se encuentran las vistas tanto de los modelos, como de los formularios de carga de datos como de búsqueda de datos en las bases de datos.
 
 En el módulo "Tercera_preentrega_Lobos\proyecto_uno\App1\urls.py" se encuentran las urls de cada vista, asi como de los formularios de búsqueda y de resultados de las búsquedas.
 
