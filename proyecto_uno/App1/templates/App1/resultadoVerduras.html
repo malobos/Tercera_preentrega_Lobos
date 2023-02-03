@@ -1,0 +1,21 @@
+{% extends 'App1/padre.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+ 
+ <section class="page-section recetasVerduras" id="recetasVerduras">
+    <div class="container">
+ 
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Recetas con verduras</h2>
+ 
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+    <body>
+        <h4> Estamos  buscando una receta subida el día {{fecha}} </h4>
+      {% for receta in recetas %}
+      <p> Receta: {{receta.nombre}} </p>
+      {% endfor %}
+    </body>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'App1/padre.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+  <section class="page-section recetasCarne" id="recetasCarne">
+    <div class="container">
+        
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Recetas con carne</h2>
+        
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+    <body><h3>EN ESTA PÁGINA PODRÁS BUSCAR RECETAS SEGÚN NOMBRE DE LA RECETA</h3><br>
+    <form action="/App1/resultadoCarne/" method="GET">
+
+        <input type="text" name="nombre" >
+        <input type="submit" value=" BUSCAR">
+
+    </form>
+</body>
+</html>
+    {% endblock %}

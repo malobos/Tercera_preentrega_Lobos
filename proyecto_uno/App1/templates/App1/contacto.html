@@ -1,0 +1,36 @@
+{% extends 'App1/padre.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">CONTACTO</h1>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+
+        <img class="masthead-avatar mb-5" src="{% static 'App1/assets/img/portfolio/contacto.png'%}" alt="..." />
+
+        <h3 >DEJAME TU CONTACTO, ASÍ PODRÉ ENVIARTE LAS NOVEDADES DE MI PÁGINA :) <br></h3>
+        <h4><a style="color:darkorange" href="{% url 'registroContacto' %}">REGISTRATE DESDE AQUÍ</a><br></h4>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>            
+
+        
+        </div>
+
+        <p class="masthead-subheading font-weight-light mb-0"></p>
+    </div>
+</header>
+       
+
+
+
+
+</section>
+{% endblock %}

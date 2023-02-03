@@ -1,0 +1,36 @@
+{% extends 'App1/padre.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">REGISTRO</h1>
+       <br>
+       <br>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Formulario - Agregar Contacto</title>
+            </head>
+            <body>
+                {% if miFormulario.errors %}
+                <p style="color: red;">ESTÁN MAL LOS DATOS. REVISAR</p>
+                {% endif %}
+                
+                <form action=""   method="POST"> {% csrf_token%}
+                    <table>
+
+                    {{miFormulario.as_table }}
+
+                    </table>
+                    <input type = "submit" value="Enviar">
+                 </form>   
+            </body>
+           
+
+    </div>
+</header>
+</section>
+{% endblock %}

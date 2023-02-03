@@ -1,0 +1,50 @@
+{% extends 'App1/padre.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+ 
+ <section class="page-section recetasVerdura" id="recetasVerdura">
+    <div class="container">
+ 
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Recetas con verduras</h2>
+ 
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+        
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+
+
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'App1/assets/img/verduras/verduritas.png'%}" alt="..." />
+ <!-- ACA PEGUE ELFORMULARIO. VER SI FUNCIONA-->
+ 
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Formulario - Agregar Receta</title>
+                    </head>
+                    <body>
+                        {% if miFormulario.errors %}
+                        <p style="color: red;">ESTÁN MAL LOS DATOS. REVISAR</p>
+                        {% endif %}
+                        
+                        <form action=""   method="POST"> {% csrf_token%}
+                            <table>
+
+                            {{miFormulario.as_table }}
+
+                            </table>
+                            <input type = "submit" value="Enviar">
+                         </form>   
+                    </body>
+                    </html>
+{% endblock %}   
